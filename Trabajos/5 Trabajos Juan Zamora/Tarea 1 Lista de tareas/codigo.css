@@ -109,3 +109,56 @@ li p {
 .empty {
   color: #ff9900;
 }
+.navbar{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid orange;
+}
+
+.navbar a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropbtn{
+    background: black;
+    color: orange;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 180px;
+    border: 1px solid orange;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    color: orange;
+}
+
+.dropdown-content a:hover{
+    background: orange;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
