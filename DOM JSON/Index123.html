@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Académico</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --negro: #000000;
+            --gris: #111111;
+            --naranja: #ff6600;
+        }
+
+        body {
+            background-color: var(--negro);
+            color: var(--naranja);
+        }
+
+        /* Navbar */
+
+        .navbar-custom {
+            background-color: var(--gris);
+            border-bottom: 3px solid var(--naranja);
+        }
+
+        .navbar-brand {
+            color: var(--naranja) !important;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: var(--naranja) !important;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            margin: 0 4px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .dropdown-item:hover {
+            background-color: var(--naranja);
+            color: var(--negro) !important;
+        }
+
+        .navbar-toggler {
+            border-color: var(--naranja);
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(55%) sepia(98%) saturate(1944%) hue-rotate(360deg);
+        }
+
+        /* Dropdown */
+
+        .dropdown-menu {
+            background-color: var(--gris);
+            border: 2px solid var(--naranja);
+        }
+
+        .dropdown-item {
+            color: var(--naranja);
+        }
+
+        /* Sección principal */
+
+        .hero {
+            min-height: calc(100vh - 76px);
+            display: flex;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 3rem;
+            font-weight: bold;
+            border-bottom: 3px solid var(--naranja);
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .texto {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Tarjetas de imágenes */
+
+        .card-custom {
+            background-color: var(--gris);
+            border: 2px solid var(--naranja);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-8px);
+        }
+
+        .img-placeholder {
+            height: 260px;
+            background-color: #1b1b1b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--naranja);
+            font-size: 1.2rem;
+        }
+
+        .img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            color: var(--naranja);
+        }
+
+        /* Botones */
+
+        .btn-custom {
+            background-color: transparent;
+            color: var(--naranja);
+            border: 2px solid var(--naranja);
+        }
+
+        .btn-custom:hover {
+            background-color: var(--naranja);
+            color: var(--negro);
+        }
+
+        footer {
+            border-top: 2px solid var(--naranja);
+            background-color: var(--gris);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-folder2-open"></i> BANDEJA
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">
+                            <i class="bi bi-house-fill"></i> Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/5 Trabajos Juan Zamora/Tarea 1 Lista de tareas/index.html">Tarea 1</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/5 Trabajos Juan Zamora/tarea 2 Lista de tareas 2/tarea2.html">Tarea 2</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/5 Trabajos Juan Zamora/Tarea 3 Tienda/index.html">Tarea 3</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/5 Trabajos Juan Zamora/Tarea 4 Inventario Zamora/">Tarea 4</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/5 Trabajos Juan Zamora/tarea 5/index1.html">Tarea 5</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Trabajos/Evaluacion de pogramacion para la web Juan Zamora/indexEvaluacion.html">
+                            <i class="bi bi-clipboard-check"></i> Evaluación
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="bi bi-list-task"></i> 14 Ejercicios
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio1.html">Ejercicio 1</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio2.html">Ejercicio 2</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio3.html">Ejercicio 3</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio4.html">Ejercicio 4</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio5.html">Ejercicio 5</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio6.html">Ejercicio 6</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio7.html">Ejercicio 7</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio8.html">Ejercicio 8</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio9.html">Ejercicio 9</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio10.html">Ejercicio 10</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio11.html">Ejercicio 11</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio12.html">Ejercicio 12</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio13.html">Ejercicio 13</a></li>
+                            <li><a class="dropdown-item" href="ejercicios/ejercicio14.html">Ejercicio 14</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+
+    <section class="hero" id="inicio">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <h1 class="titulo">
+                        Sobre Mí
+                    </h1>
+
+                    <p class="texto">
+                        Hola, mi nombre es <strong>Juan</strong>. Soy estudiante
+                        de programación y actualmente estoy aprendiendo HTML,
+                        CSS, JavaScript, Python y otras tecnologías orientadas
+                        al desarrollo web.
+                    </p>
+
+                    <p class="texto">
+                        En este sitio encontrarás mis tareas, evaluaciones
+                        y ejercicios realizados durante mi proceso académico.
+                    </p>
+
+                    <a href="tareas/tarea1.html" class="btn btn-custom btn-lg mt-3">
+                        Ver mis tareas
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+
+                            <div class="card card-custom h-100">
+
+                                <div class="img-placeholder">
+                                    <img src="/Trabajos/WhatsApp Image 2026-06-18 at 8.56.17 AM.jpeg" alt="Imagen 1">
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h5>Fundamentos de JavaScript</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="card card-custom h-100">
+
+                                <div class="img-placeholder">
+                                    <img src="img/foto2.jpg" alt="Imagen 2">
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h5>Manipulación del DOM</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="text-center py-4">
+        <p class="mb-0">
+            © 2026 - Mi Portafolio Académico
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
