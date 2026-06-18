@@ -135,59 +135,57 @@ h3 {
 /* BARRA DE NAVEGACION */
 
 .navbar{
-    background-color: #000;
-    border-bottom: 2px solid #f47521;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    gap: 20px;
+    background:#000;
+    border-bottom:2px solid #f47521;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+    margin-bottom:20px;
 }
 
 .navbar a{
-    color: #f47521;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    color:#f47521;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 .navbar a:hover{
-    color: white;
+    color:white;
 }
 
 .dropdown{
-    position: relative;
+    position:relative;
 }
 
 .dropbtn{
-    background-color: #000;
-    color: #f47521;
-    border: 1px solid #f47521;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-weight: bold;
+    background:#000;
+    color:#f47521;
+    border:1px solid #f47521;
+    padding:8px 12px;
+    cursor:pointer;
 }
 
 .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #111;
-    min-width: 180px;
-    border: 1px solid #f47521;
-    z-index: 999;
+    display:none;
+    position:absolute;
+    background:#111;
+    min-width:180px;
+    border:1px solid #f47521;
+    z-index:1000;
 }
 
 .dropdown-content a{
-    display: block;
-    padding: 10px;
-    color: #f47521;
-    text-decoration: none;
+    display:block;
+    padding:10px;
+    color:#f47521;
 }
 
 .dropdown-content a:hover{
-    background-color: #f47521;
-    color: #000;
+    background:#f47521;
+    color:#000;
 }
 
 .dropdown:hover .dropdown-content{
-    display: block;
+    display:block;
 }
