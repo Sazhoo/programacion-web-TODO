@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #000;
+    color: #f47521;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f47521;
+}
+
+/* Productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    justify-items: center;
+}
+
+.producto {
+    background: #111;
+    border: 2px solid #f47521;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 170px;
+    box-shadow: 0 0 10px rgba(244, 117, 33, 0.4);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    color: #f47521;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.producto button {
+    padding: 8px 15px;
+    background-color: #f47521;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: #ff8c3a;
+}
+
+/* Carrito */
+.carrito h2 {
+    color: #f47521;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #f47521;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #1a1a1a;
+    color: #f47521;
+}
+
+tbody td[colspan="5"] {
+    text-align: center;
+    color: #ffb27a;
+    font-style: italic;
+}
+
+#totalGeneral {
+    margin-top: 15px;
+    color: #f47521;
+    font-size: 1.5em;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+h3 {
+    color: #f47521;
+}
+/* BARRA DE NAVEGACION */
+
+.navbar{
+    background:#000;
+    border-bottom:2px solid #f47521;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.navbar a{
+    color:#f47521;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+    background:#000;
+    color:#f47521;
+    border:1px solid #f47521;
+    padding:8px 12px;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#111;
+    min-width:180px;
+    border:1px solid #f47521;
+    z-index:1000;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    color:#f47521;
+}
+
+.dropdown-content a:hover{
+    background:#f47521;
+    color:#000;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}

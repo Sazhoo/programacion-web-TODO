@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #000000;
+  color: #ff9900;
+}
+
+h1 {
+  text-align: center;
+  color: #ff9900;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  padding: 30px;
+  border: 2px solid #ff9900;
+  border-radius: 10px;
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
+  background-color: #222222;
+  color: #ff9900;
+  border: 1px solid #ff9900;
+}
+
+.li-container {
+  background-color: #000000;
+  width: 100%;
+  color: #ff9900;
+  margin-top: 20px;
+  border: 1px solid #ff9900;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: #000000;
+  border: 1px solid #ff9900;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  color: #ff9900;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #ff6600;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: #ff9900;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  color: black;
+  font-family: fantasy;
+  background-color: #ff9900;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: #ff6600;
+}
+
+.empty {
+  color: #ff9900;
+}
+/* BARRA DE NAVEGACION */
+
+.navbar{
+    background:#000;
+    border-bottom:2px solid #f47521;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.navbar a{
+    color:#f47521;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropbtn{
+    background:#000;
+    color:#f47521;
+    border:1px solid #f47521;
+    padding:8px 12px;
+    cursor:pointer;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#111;
+    min-width:180px;
+    border:1px solid #f47521;
+    z-index:1000;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    color:#f47521;
+}
+
+.dropdown-content a:hover{
+    background:#f47521;
+    color:#000;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
